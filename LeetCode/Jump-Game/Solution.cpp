@@ -1,0 +1,1 @@
+if current position + maximum jump >= goal
