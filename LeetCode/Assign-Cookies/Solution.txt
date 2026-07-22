@@ -1,0 +1,15 @@
+1public class Solution {
+2    public int findContentChildren(int[] children, int[] cookies) {
+3        Arrays.sort(children);
+4        Arrays.sort(cookies);
+5        
+6        int child = 0;
+7        for (int cookie = 0; child < children.length && cookie < cookies.length; cookie ++) {
+8            if (cookies[cookie] >= children[child]) {
+9                child ++;
+10            }
+11        }
+12        
+13        return child;
+14    }
+15}
